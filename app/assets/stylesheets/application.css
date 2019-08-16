@@ -30,5 +30,13 @@
 #button {
     margin-top: 10px;
     padding: 5px;
-    display: inline-block
+    display: inline-block;
+}
+
+#drop_down {
+    display: inline-block;
+}
+
+#new_review_game_menu {
+    display: inline-block;
 }

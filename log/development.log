@@ -1866,3 +1866,296 @@ Processing by ReviewsController#new as HTML
 Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:26:43 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/rod/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:3
+  Rendered reviews/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 229ms (Views: 217.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:28:12 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:3
+  Rendered reviews/new.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"reviews", :id=>nil}, missing required keys: [:id]):
+    11:     </div>
+    12: <br>
+    13:     <div id="button">
+    14:     <%= button_to "Submit your review", review_path(@review), method: :post %>
+    15:     </div>
+    16: 
+    17: <% end %>
+  
+app/views/reviews/new.html.erb:14:in `block in _app_views_reviews_new_html_erb___3407787418894874087_70122034099700'
+app/views/reviews/new.html.erb:2:in `_app_views_reviews_new_html_erb___3407787418894874087_70122034099700'
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:28:43 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:3
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/reviews" for ::1 at 2019-08-16 15:28:45 +0100
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1ItlIb2pLBT7QIKwBkNeYOr5eDyli1aCCcWV2UtFUvJWYw92CoODrr5USYiUui3hv451RySGY2lJFbtkWdKFUQ==", "review"=>{"content"=>"", "rating"=>""}}
+No template found for ReviewsController#create, rendering head :no_content
+Completed 204 No Content in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:30:02 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:30:02 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:30:02 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:51:24 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/rod/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 218ms (Views: 205.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:51:34 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:51:35 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:51:47 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:51:47 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:51:47 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:52:23 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:4
+  Rendered reviews/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:52:58 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:54:00 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:54:12 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:54:36 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:54:37 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:54:45 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:54:46 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:00 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:00 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:00 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:31 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:31 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:31 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:32 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:57 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:55:58 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reviews/new" for ::1 at 2019-08-16 15:56:05 +0100
+Processing by ReviewsController#new as HTML
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mGame Load (0.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  ↳ app/views/reviews/new.html.erb:5
+  Rendered reviews/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
