@@ -1,0 +1,22 @@
+
+<h1 id="review_header">Here is a list of all our game reviews:</h1>
+
+<% @reviews.each do |review| %>
+<div>
+<h2><%= review.game %></h2>
+<p><%= review.content %></p>
+<h3><%= "#{review.rating}/10" %></h3>
+</div>
+<% end %>
+
+<div id="button">
+    <%= button_to "Home", welcome_path, method: :get %>
+</div>
+
+<div id="button">
+    <%= button_to "Write a new review", new_review_path, method: :get %>
+</div>
+
+<div id="button">
+    <%= button_to "Check out Games", games_path, method: :get %>
+</div>
