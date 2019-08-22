@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keyword: MyString
+  game_id: 1
+  genre_id: 1
+  platform_id: 1
+
+two:
+  keyword: MyString
+  game_id: 1
+  genre_id: 1
+  platform_id: 1

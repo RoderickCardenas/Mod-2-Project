@@ -1,0 +1,23 @@
+<h1> Custom Search </h1>
+<%= form_for @search do |f| %>
+
+    <%= f.label :keyword %>:
+    <%= f.text_field :keyword %>
+
+    <%#= f.label :genre_id %>:
+    <%#= f.text_field :genre_id %>
+
+    
+    <%# <%= f.label :platform_id %> %>
+    <%# <%= f.collection_select :platform_id, Platform.order(:name),:id, :name, :include_blank => true%> %>
+
+   
+
+    <%= f.submit "Search"%>
+
+<% end %>
+
+
+
+
+<%= link_to 'Back', games_path %>

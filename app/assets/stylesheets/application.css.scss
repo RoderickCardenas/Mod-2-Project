@@ -1,0 +1,231 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+$light-background: #dddbdb;
+$light-text: #f4f4f4;
+$dark-background: #000000;
+$dark-text: #000000;
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ #image_logo {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    right: 30%;
+    width: 30%;
+    padding-bottom: 10px;
+ }
+
+ a {
+    color: #000000;
+ }
+
+#unavail {
+    width: 20%;
+ }
+
+ #box {
+    background-image: url("../assets/bg_05_jf.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #e1e8e3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .container {
+    padding-right: 0px;
+    padding-left: 0px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(61, 178, 194);
+    color: white;
+    text-align: center;
+ }
+
+ #request_delete_account {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+
+/* unvisited link */
+#footer a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  #footer a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  #footer a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  #footer a:active {
+    color: white;
+  }
+
+ h1 {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
+ #games_header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(255, 255, 255, 0.747);
+    margin-top: 5%;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#nav_button {
+    background-color: #adadad77;
+    color: white;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+#game_list {
+    list-style: none;
+    display: inline-block;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#game_list span {
+    border-radius: 25px;
+    background-color: #ffffffb6;
+    padding: 10px;
+    display: inline;
+}
+
+#game_list span a:link {
+    color: black;
+}
+
+#game_list span a:visited {
+    color: black;
+}
+
+#game_list span a:hover {
+    color: rgb(161, 2, 2);
+    text-decoration: none;
+}
+
+#game_details {
+    @if $light_background {
+    display: inline-block;
+    color: $dark-text;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    } 
+//  @if $dark-background {
+//     display: inline-block;
+//      color: $light-text;
+//       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+//    }
+}
+
+#game_details a {
+    color: #19019c;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
+#review {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: $dark-text;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+#review\ rating {
+    font-size: 20px;
+    color: $dark-text;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color: #f4f4f4;
+    padding: 10px 10px 15px 10px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+#review_show_box {
+    padding-left: 15px;
+}
+
+h3 a {
+    padding-bottom: 5%;
+    color: #f4f4f4;
+}
+// Buttons
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: none;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px 2px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button_to {
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: #000000;
+  }
+// 
+
+// Make Room
+#some_space {
+    padding-bottom: 200px;
+}
+//

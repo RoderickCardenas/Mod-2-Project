@@ -9,7 +9,61 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body id = "box">
+      <nav>
+        <div class = "container">
+
+          
+          <ul class = "nav navbar-nav">
+            <li id = "nav_button"><%= link_to 'All Games', games_path %> </li>
+            
+            
+            <% if user_signed_in? %>
+            <li id = "nav_button">  <%= link_to current_user.email , user_path(current_user) %>  </li>
+            <li id = "nav_button"> <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> </li>
+            
+            <%else%>
+            <li id = "nav_button"> <%= link_to 'Log In', new_user_session_path %> </li>
+            <li id = "nav_button"> <%= link_to 'Sign Up', new_user_registration_path %> </li>
+            <% end %>
+          
+          </ul>
+
+        <a href= "/" ><img id = "image_logo" src="../assets/junkfood_logo_update.png"></a>
+
+        <ul id= "dropdown_button" class = "nav navbar-nav navbar-right">
+          <li id = "nav_button" class = "dropdown"> <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-expanded = "false"> Genres <span class = "caret"> </span></a> 
+            <ul class = "dropdown-menu" role ="menu "> 
+              <% Genre.unique_genres.each do |genre| %>
+                <li>
+                  <%= link_to genre.name, games_path(genre: genre.name) %>
+                </li>
+              <%end%>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class = "nav navbar-nav navbar-right">
+          <li id = "nav_button" class = "dropdown"> <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-expanded = "false"> Platforms <span class = "caret"> </span></a> 
+            <ul class = "dropdown-menu" role ="menu "> 
+              <% Platform.all.each do |platform| %>
+                <li>
+                  <%= link_to platform.name, games_path(platform: platform.name) %>
+                </li>
+              <%end%>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+  
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= yield %>
+      <footer id= "footer">
+        <% unless user_signed_in? %>
+                <h3 id="footer_link_text"><%= link_to "Sign Up", new_user_registration_path%> / <%= link_to "Log In", new_user_session_path%> to write a review!</h3>
+        <% end %>
+      </footer>
   </body>
 </html>
